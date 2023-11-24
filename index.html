@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>B Section - Time Table</title>
+        <link rel="shortcut icon" href="./letter-b-32.ico" type="image/x-icon">
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Main Data Table -->
+        <div class="mainTable">
+            <h1>TIME<font style="color: black; background-color: orange; margin-left: 10px; padding: 2px; border-radius: 5px;">TABLE</font></h1>
+            <table id="table" border="1" >
+                
+                <tr>
+                    <th>Lecture</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    
+                </tr>
+                
+                <tr>
+
+                    <td>TIME<br>
+                        DATE
+                    </td>
+                    <td>9:00-10:00 </td>
+                    <td>10:00-11:00</td>
+                    <td>11:00-12:00</td>
+                    <td>12:00-1:00</td>
+                    <td>1:00-2:00</td>
+                    <td>2:00-3:00</td>
+                    <td>3:00-4:00</td>
+                    <td>4:00-5:00</td>
+                    <td>4:30-5:30</td>
+                </tr>
+                
+                <tr>
+                    <td>MONDAY</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>CST222 DS<br>308</td>
+                    <td>HUT253 BC<br>308</td>
+                    <td>RECESS</td>
+                    <td>MAT252 LAS<br>308</td>
+                    <td>CSP222 DS[B1, B2] (Lab-2) /<br>
+                        CSP224 PL-I[B3, B4] (Lab-1)
+                       <br></td>
+                    <td>CSP222 DS[B1, B2] (Lab-2) /<br>
+                        CSP224 PL-I[B3, B4] (Lab-1)
+                       <br></td>
+                    
+
+                </tr>
+                
+                <tr>
+                    
+                    <td>TUESDAY</td>
+                    <td></td>
+                    <td> </td>
+                    <td>CST222 DS<br>R-002</td>
+                    <td>CST223 TOC<br>R-002</td>
+                    <td>RECESS</td>
+                    <td>HUT253 BC<br>R-002</td>
+                    <td>CSP224 PL-I [B1, B2] (Lab-2)
+                    </td>
+                    <td>CSP224 PL-I [B1, B2] (Lab-2)
+                    </td>
+                   
+                </tr>
+                
+                <tr>
+                    <td>WEDNESDAY</td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>CST221 CAO<br>308
+                    </td>
+                    <td>HUT253 BC<br>
+                    </td>
+                    <td>RECESS</td>
+                    <td>CST223 TOC<br>C
+                        308</td>
+                    <td>CHT252 EVS<br>C
+                            308</td>
+                    <td>CHT252 EVS<br>C
+                            308</td>
+                </tr>
+                
+                <tr>
+                    <td>THURSDAY</td>
+                    <td>CSP224 PL-I [B3, B4] (Lab-1)</td>
+                    <td>CSP224 PL-I [B3, B4] (Lab-1)</td>
+                    <td>CST222 DS<br>308</td>
+                    <td>CST223 TOC<br>308 </td>
+                    <td>RECESS</td>
+                    <td>CST221 CAO <br>308                    </td>
+                    <td>HUT256 ITK <br>                      308   </td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>FRIDAY</td>
+                    <td> CSP224 PL-1 [B1,B2] (Lab-1)</td>
+                    <td>CSP222 DS [B3,B4] (Lab-2)</td>
+                    <td>CST223 TOC <br>308</td>
+                    <td>CST222 DS<br>308</td>
+                    <td>RECESS</td>
+                    <td>MAT252 LAS <br>308</td>
+                    <td>HONOR</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>SATURDAY</td>
+                    <td> </td>
+                    <td></td>
+                    <td>CST221 CAO <br>308</td>
+                    <td>MAT252 LAS <br>308</td>
+                    <td>RECESS</td>
+                    <td>2:00 - 3:00 <br>HONOR</td>
+                    <td>3:00 - 4:00  <br>HONOR</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- Update Button -->
+        <div class="updateBtn">
+            <button  onclick="editTableDisplay()">Update Data</button>
+        </div>
+
+        <!-- Edit table -->
+        <div class="editTable">
+            <center>
+            <div class="left">1</div><div class="right"><input type="text" name="fname" id="fname"></div><br><br>
+            <div class="left">2</div><div class="right"><input type="text" name="lname" id="lname"></div><br><br>
+            <div class="left">3</div><div class="right"><input type="text" name="country" id="country"></div><br><br>
+            <div class="left">4</div><div class="right"><input type="text" name="l4" id="n4"></div><br><br>
+            <div class="left">5</div><div class="right"><input type="text" name="l5" id="n5"></div><br><br>
+            <div class="left">6</div><div class="right"><input type="text" name="l6" id="n6"></div><br><br>
+            <div class="left">7</div><div class="right"><input type="text" name="l7" id="n7"></div><br><br>
+            <div class="left">8</div><div class="right"><input type="text" name="l8" id="n8"></div><br><br>
+            <div class="left">9</div><div class="right"><input type="text" name="l9" id="n9"></div><br><br>
+            <button onclick="editRow();" class="editRowBtn">Update Time Table</button><br><br>
+            </center>
+        </div>
+        
+        <div class="footer">
+            <marquee>B Section: Nobody codes it better ;)</marquee>
+        </div>
+
+        <!-- link JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>

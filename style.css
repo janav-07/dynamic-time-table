@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+	font-family: "Poppins";
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+body {
+	background-color: black;
+}
+
+/*Main Data Table */
+.mainTable{
+	text-align: center;
+	margin-top: 10px;
+}
+#table{
+	margin: 5px auto;
+	margin-top: 20px;
+}
+table tr:not(:first-child){
+	cursor: pointer;
+	transition: all .25s ease-in-out;
+}
+table tr:not(:first-child):hover{
+	background-color: #ff9900;
+}
+
+table{
+    width:90%;
+	height: 500px;;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(255, 74, 74) 211;
+}
+
+/*Data Update Button */
+.updateBtn{
+	text-align: center;
+}
+.updateBtn button{
+	background-color: gold;
+	font-size: medium;
+	font-weight: 600;
+	padding: 5px 10px;
+	border: 1px solid rgb(0, 0, 0);
+	color: rgb(16, 16, 16);
+	margin: 10px 0;
+	border-radius: 5px;
+}
+.updateBtn button:hover{
+	background: rgb(240, 81, 1);
+	color: black;
+	transition: .5s;
+}
+
+/*Data Update Table*/
+.editTable{
+	display: none;
+	padding-top: 20px;
+	width: 15%;
+	margin: 0 auto;
+}
+.left{
+	float: inline-start;
+}
+.right{
+	float: inline-end;
+}
+.editRowBtn{
+	background-color: #f95402;
+	color: rgb(0, 0, 0);
+	font-size: large;
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-weight: 600;
+}
+.editRowBtn:hover{
+	background-color: rgb(255, 156, 94);
+	color: rgb(0, 0, 0);
+	transition: .5s;
+}
+
+input {
+	color: black;
+	background-color: #dbdbdb;
+	border-radius: 10px;
+}
+
+.footer {
+	margin-top: 1vw;
+	display: flex;
+	padding: 1%;
+	background-color: #ff9900;
+}
+
+.footer marquee {
+	color: black;
+	font-weight: 700;
+}
